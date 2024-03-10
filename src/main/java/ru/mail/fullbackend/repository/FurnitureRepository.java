@@ -1,2 +1,10 @@
-package ru.mail.fullbackend.repository;public class FurnitureRepository {
+package ru.mail.fullbackend.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import ru.mail.fullbackend.models.Furniture;
+
+@Repository
+public interface FurnitureRepository extends JpaRepository<Furniture, Long> {
+
 }
